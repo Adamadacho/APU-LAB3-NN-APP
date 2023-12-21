@@ -75,3 +75,6 @@ predictions <- predict(model, newdata = new_data)
 plot(new_data$x, predictions, col = "green", type = "l", lwd = 2, ylab = "Predicted f(x)", xlab = "x", main = "Model Prediction on New Data")
 lines(new_data$x, cos(new_data$x^2), col = "black", lwd = 2)
 legend("topleft", legend = c("Model Prediction", "True Function"), col = c("green", "black"), lwd = c(2, 2))
+
+# Wizualizacja sieci neuronowej
+plot(model)
